@@ -1,15 +1,15 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-console.log(process.env.NODE_ENV);
+// console.log(process.env.NODE_ENV);
 module.exports = {
   mode: "development",
   devtool: "inline-source-map",
   entry: {
-    index: "./src/app.js",
+    index: "./src/index.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Single Product wit Styled Component",
+      title: "Single Product with Styled Component",
       template: "./src/template.html",
     }),
   ],
